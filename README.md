@@ -143,7 +143,7 @@ make run
    *.pyc
    .adk/
 
-⚠️ NEVER push .env to GitHub. Your API key will be exposed publicly.
+
 
 ---
 
