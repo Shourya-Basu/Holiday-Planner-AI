@@ -98,25 +98,4 @@ make run
   3. Prints a `CRITICAL` audit log and routes to `security_event`.
 - **Check**: The terminal prints `[AUDIT LOG] {"event": "security_violation", "severity": "CRITICAL" ...}` and the UI displays the access denied message.
 
----
-
-## Troubleshooting
-
-1. **Error: `ModuleNotFoundError: No module named 'mcp'`**
-   - *Cause*: Dependencies are not synced in the virtual environment.
-   - *Fix*: Run `make install` or `uv sync` from the project root.
-
-2. **Error: `404 Model Not Found`**
-   - *Cause*: The model specified in `.env` is retired or invalid.
-   - *Fix*: Ensure `GEMINI_MODEL=gemini-2.5-flash` is set in your `.env` file.
-
-3. **Playground UI does not reflect code changes**
-   - *Cause*: On Windows, hot-reloading is disabled to avoid event loop conflicts.
-   - *Fix*: Fully stop the server and restart it:
-     ```powershell
-     Get-Process -Id (Get-NetTCPConnection -LocalPort 18081, 8090 -ErrorAction SilentlyContinue).OwningProcess | Stop-Process -Force
-     make playground
-     ```
-
-
 
