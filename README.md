@@ -154,5 +154,3 @@ make run
 ![Cover Page Banner](assets/cover_page_banner.png)
 
 
-## Demo Script
-Refer to [DEMO_SCRIPT.txt](file:///c:/Users/9042b/Documents/Coding/Antigravity/Project/holiday-planner/DEMO_SCRIPT.txt) for a complete spoken walkthrough script.
