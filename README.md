@@ -1,4 +1,4 @@
-# 🌴 Holiday Planner AI
+# Holiday Planner AI
 
 A secure, multi-agent travel planning concierge built with **Google ADK 2.0+** that generates personalized holiday itineraries and budget estimates using real-time travel tools.
 
